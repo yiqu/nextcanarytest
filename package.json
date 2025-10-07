@@ -3,10 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "dev2": "next dev",
     "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "il": "npm install --legacy-peer-deps",
+    "build": "npx prisma generate && npx prisma db push && next build",
+    "build2": "next build",
+    "build-nl": "next build --no-lint",
+    "build-turbo": "next build --turbopack",
+    "build-debug-ppr": "next build --debug-prerender",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "next lint",
+    "prettier-check": "npx prettier --check app",
+    "lint-check": "npx eslint . --ext js,ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "push-prisma": "npx prisma db push",
+    "update-prisma": "npx prisma generate"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",
