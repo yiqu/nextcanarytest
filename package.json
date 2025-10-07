@@ -51,6 +51,7 @@
     "zod": "^4.1.12"
   },
   "devDependencies": {
+    "babel-plugin-react-compiler": "19.1.0-rc.3",
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
