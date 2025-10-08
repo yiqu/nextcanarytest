@@ -13,6 +13,10 @@ const nextConfig: NextConfig = {
     cacheComponents: true,
   },
   reactCompiler: process.env.NODE_ENV === 'production' ? true : false,
+  outputFileTracingIncludes: {
+    '/api/**/*': ['./node_modules/.prisma/client/**/*'],
+    '/*': ['./node_modules/.prisma/client/**/*'],
+  },
   // typedRoutes: true
 };
 

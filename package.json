@@ -17,7 +17,8 @@
     "prettier-check": "npx prettier --check app",
     "lint-check": "npx eslint . --ext js,ts,tsx --report-unused-disable-directives --max-warnings 0",
     "push-prisma": "npx prisma db push",
-    "update-prisma": "npx prisma generate"
+    "update-prisma": "npx prisma generate",
+    "postinstall": "npx prisma generate"
   },
   "dependencies": {
     "@emotion/cache": "^11.14.0",
